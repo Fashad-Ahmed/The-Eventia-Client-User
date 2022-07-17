@@ -20,12 +20,13 @@ function AdminNavbar() {
         {!click && <Link
           to='/wedding'
           className='admin-navbar-text' onClick={closeMobileMenu}>
-          <h4 style={{ color: "white" }}>DN-Organizers</h4>
+          <h4 style={{ color: "white" }}>The Eventia</h4>
         </Link>}
         <div className='admin-menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
         </div>
         <ul className={click ? 'admin-nav-menu active' : 'admin-nav-menu'}>
+          
           <li className='admin-nav-item'>
             <Link
               to='/wedding'
@@ -53,6 +54,15 @@ function AdminNavbar() {
               onClick={closeMobileMenu}
             >
               CORPORATE
+            </Link>
+          </li>
+          <li className='admin-nav-item'>
+            <Link
+              to='/Payment'
+              className='admin-nav-link' 
+              onClick={closeMobileMenu}
+            >
+                Payment
             </Link>
           </li>
           <li className='admin-nav-item'>

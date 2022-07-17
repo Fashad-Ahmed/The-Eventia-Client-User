@@ -6,14 +6,14 @@ export default function Contect() {
             <div className="container">
                 <div className="row copyright">
                     <div className="col-md-12 text-center">
-                        <h3 style={{fontWeight:"bold",fontFamily:"book, Arial, serif",color:"#F14E95"}}>DN ORGANIZERS</h3>
+                        <h3 style={{fontWeight:"bold",fontFamily:"book, Arial, serif",color:"#F14E95"}}>THE EVENTIA</h3>
                         <div className="fh5co-contact-info">
                             <ul>
                                 <div className="aligning">
-                                <li className="phone"><a href="tel://1234567920">+92 315 5336569</a></li>
-                                <li className="email"><a href="mailto:info@yoursite.com">alirmish512@gmail.com</a></li>
+                                <li className="phone"><a href="tel://1234567920">+92 4545368 92</a></li>
+                                <li className="email"><a href="mailto:info@yoursite.com">admin@eventia.com</a></li>
                                 </div>
-                                <li class="address">House 14, Street 17. F7/2 Islamabad P.O. Box 1016. Pakistan</li>
+                                <li class="address">Next to your localhood, it's global</li>
                             </ul>
                         </div>
                         <p style={{padding:"10px"}}>

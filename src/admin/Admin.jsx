@@ -62,6 +62,7 @@ const Admin = (props) => {
     { name: 'Wedding', to: '/wedding', icon: '/icons/about.svg', subMenuItems: [] },
     { name: 'Birthday', to: '/birthday', icon: '/icons/blog.svg', subMenuItems: [] },
     { name: 'Corporate', to: '/corporate', icon: '/icons/destinations.svg', subMenuItems: [] },
+    // { name: 'Payment', to: '/Payment', icon: '/icons/payment.svg', subMenuItems: [] },
     { name: 'VerifySlips', to: '/VerifySlips', icon: '/icons/contacts.svg', subMenuItems: [] },
     { name: 'Filter', to: '/filter', icon: '/icons/services.svg', subMenuItems: [] },
     { name: 'Logout', to: '/', icon: '/icons/birthday.svg', subMenuItems: [] }

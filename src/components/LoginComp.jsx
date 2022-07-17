@@ -64,20 +64,19 @@ function validateEmail(email) {
 }
 
 export default function SignIn() {
+  let key = `62b3249a6c74de4270f2579d`;
   const dispatch = useDispatch();
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const handleClose = () => {
     setOpen(false);
   };
-  // const handleToggle = () => {
-  //   setOpen(!open);
-  // };
+
   const [email, setemail] = useState(null);
   const [isEmailValidate, setIsEmailValidate] = useState(false);
   const [isPasswordValidate, setIsPasswordValidate] = useState(false);
   const [showError, setShowError] = useState(false);
-  const [password, setpassword] = useState(null);
+  const [password, setpassword] = useState('');
   const history = useHistory();
 
 
@@ -85,8 +84,9 @@ export default function SignIn() {
     e.preventDefault();
     console.log(`Email and Passwords are ==> ${email} & ${password}`)
     if (isEmailValidate && isPasswordValidate) {
-      if (email == "admin@gmail.com" && password == 123456) {
+      if (email == "fashad_ahmed@gmail.com" && password == "christopherNolan112233") {
         localStorage.setItem('admin', email);
+        localStorage.setItem('key', key);
         dispatch(authenticate('', email));
         history.push("/wedding")
         localStorage.removeItem('user')

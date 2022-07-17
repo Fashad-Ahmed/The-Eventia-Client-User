@@ -33,6 +33,9 @@ export default function Modal(props) {
     const [occuredDate, setOccuredDate] = useState([]); //[{id, name, price},.......] getting from firebase || object of Item
     const dispatch = useDispatch();
 
+    const handlePackage = (e) => {
+        // alert(`PACKAGE`);
+    }
     const handleClickOpen = (scrollType) => () => {
         firebase.database().ref(`/events/${getData}/items/menu`).on('value', function (snapshot) {
             let items = snapshot.val()
@@ -144,7 +147,7 @@ export default function Modal(props) {
         <>
             {/* {console.log(`Designer: ${designerName} Date: ${occuredDate} `)} */}
             {/* <Button variant="outlined" color="secondary" >Add Package</Button> */}
-            <Button variant="outlined" color="secondary" style={{ marginBottom: "10px", padding: "10px 50px", fontSize: "12px" }} onClick={handleClickOpen('paper')}>Add Package</Button>
+            <Button variant="outlined" color="secondary" style={{ marginBottom: "10px", padding: "10px 50px", fontSize: "12px" }} onClick={handlePackage()}>Add Package</Button>
             {/* <button type="button" className={props.clsName} onClick={handleClickOpen('paper')}>Customize Package</button> */}
             {/* <Button onClick={handleClickOpen('body')}>scroll=body</Button> */}
             <Dialog

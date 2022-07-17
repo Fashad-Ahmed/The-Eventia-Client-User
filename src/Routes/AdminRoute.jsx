@@ -4,6 +4,7 @@ import Birthday from '../components/MainView/Birthday/Birthday'
 import Corporate from '../components/MainView/Corporate/Corporate'
 import Reviews from '../components/MainView/Reviews/Reviews'
 import VerifySlips from '../components/MainView/Verify/VerfySlips.jsx'
+import Payment from '../components/MainView/Payment/index'
 import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
 
 const AdminRoute = () => {
@@ -18,6 +19,7 @@ const AdminRoute = () => {
             <Route exact path='/wedding' component={Main} />
             <Route exact path='/birthday' component={Birthday} />
             <Route exact path='/corporate' component={Corporate} />
+            <Route exact path='/Payment' component={Payment} />
             <Route exact path='/VerifySlips' component={VerifySlips} />
             <Route exact path='/Reviews' component={Reviews} />
             <Redirect to='/wedding' />
