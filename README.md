@@ -1,6 +1,6 @@
 # Event Management System
 
-[![dnOrg.png](https://i.postimg.cc/NFH9Kfmt/dnOrg.png)](https://postimg.cc/ctd4jWFk)
+<!-- [![dnOrg.png](https://i.postimg.cc/NFH9Kfmt/dnOrg.png)](https://postimg.cc/ctd4jWFk) -->
 
 # Introduction
  [Live](https://dnorganizers.web.app).
